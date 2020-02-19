@@ -8,32 +8,35 @@
 
 
 * {
-    box-sizing: border-box;
+  box-sizing: border-box;
 }
 
 img {
-    max-width: 100%;
+  max-width: 100%;
 }
 
 
 /* Зачем ОНО ВООБЩЕ? */
 body {
-    background-color: #000000;  /* изменить */
-    margin: 0;
-    /* color: white; */
-    font-family: 'Roboto', sans-serif;
+  background-color: #000000;
+  /* изменить */
+  margin: 0;
+  /* color: white; */
+  font-family: 'Roboto', sans-serif;
 }
 
 .container {
-    width: 90%;
-    max-width: 945px;
-    margin: auto;
+  width: 90%;
+  max-width: 945px;
+  margin: auto;
 }
 
-.playstation{
-    /* background: linear-gradient(0deg, #000000 0.01%, rgba(0, 0, 0, 0) 95);
-    padding-bottom: 155px;
-    padding-top: 40px; */
+.button-light {
+  background-color: #0072ce;
+}
+
+.button-dark {
+  background-color: #363636;
 }
 
 .playstation-navbar {
@@ -73,13 +76,16 @@ body {
   padding-bottom: 50px;
 }
 
+/* Gradient */
 @keyframes gradient {
   0% {
     background-position: 0% 50%;
   }
+
   50% {
     background-position: 100% 50%;
   }
+
   100% {
     background-position: 0% 50%;
   }
@@ -107,33 +113,11 @@ body {
 
 .playstation-button {
   margin-top: 10px;
-  border:none;
+  border: none;
   padding: 12px 24px;
   font-size: 16px;
   color: white;
 }
-
-.button-light {
- background-color: #0072ce;
-}
-
-.button-dark {
-  background-color: #363636;
-}
-
-
-/*
-    FLEXBOX
-*/
-
-
-
-
-
-
-
-
-
 
 /*
     SLIDES
@@ -144,7 +128,7 @@ body {
   padding-bottom: 92px;
 }
 
-.section-title{
+.section-title {
   margin: 0;
   margin-bottom: 84px;
   font-weight: bold;
@@ -173,13 +157,13 @@ body {
   height: 240px;
 }
 
-.project-image img{
+.project-image img {
   border-radius: 20px;
   width: 100%;
 }
 
 .project-title {
-  flex-basis: 100% ;
+  flex-basis: 100%;
   font-weight: bold;
   font-size: 32px;
   line-height: 28px;
@@ -199,6 +183,171 @@ body {
 .project-text p {
   margin: 5px;
 }
+
+/*
+    FEATURES
+*/
+
+.features {
+  background-color: #000000;
+  color: #FFFFFF;
+  text-align: center;
+}
+
+.features-block {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+
+  /* margin: 20% 20% 20% 20%;
+     padding: 40px 40px 40px 40px; */
+}
+
+.features-item {
+  flex-basis: 50%;
+  max-width: 300px;
+  margin-bottom: 63px;
+}
+
+.features-title {
+  margin: 0px;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin-bottom: 16px;
+}
+
+.features-image {
+  display: block;
+  margin: auto;
+  /* margin-bottom: 22px; */
+}
+
+.fetures-text {
+  margin: 0px;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 28px;
+}
+
+/*
+    FOOTER 
+*/
+
+
+
+.contacts-form {
+  background: #FFFFFF;
+  box-shadow: -5px 5px 0px #FFC41D;
+  /*тень*/
+  border-radius: 5px;
+  /*скругление*/
+  max-width: 380px;
+  padding-top: 40px;
+  padding-left: 48px;
+  padding-right: 48px;
+  padding-bottom: 49px;
+}
+
+.form-title {
+  margin: 0px;
+  color: black;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 28px;
+  text-align: center;
+  margin-bottom: 29px;
+}
+
+.input {
+  background: #F8F8F8;
+  box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
+  border-radius: 5px;
+  padding: 18px 20px;
+  padding-left: 50px;
+  width: 100%;
+  border: none;
+  /*выкл обводку вкл браузером по умолчанию*/
+  font-size: 14px;
+  line-height: 28px;
+}
+
+.input-name {
+  margin-bottom: 17px;
+  background-image: url('../img/user-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.input-phone {
+  margin-bottom: 17px;
+  background-image: url('../img/phone-icon.svg');
+  background-repeat: no-repeat;
+  background-position: center left 20px;
+}
+
+.form-button {
+  width: 100%;
+}
+
+.contacts-block {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.contacts-text {
+  flex-basis: 50%;
+}
+
+.contacts-data {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 42px;
+}
+
+.contacts-phone,
+.contacts-mail {
+  flex-basis: 50%;
+  margin-bottom: 53px;
+}
+
+.contacts-social {
+  flex-basis: 100%;
+}
+
+.contacts-title {
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 28px;
+  margin: 0px;
+  margin-bottom: 15px;
+}
+
+.contacts-link {
+  text-decoration: none;
+  color: inherit;
+  margin-right: 37px;
+}
+
+.contacts-link:hover {
+  text-decoration: underline;
+}
+
+.contacts-policy {
+  display: inline-block;
+  font-size: 15px;
+  line-height: 18px;
+  text-decoration-line: underline;
+  color: #A5A5A5;
+  margin-top: 72px;
+}
+
+
+
+
+
+
 
 
 
@@ -222,258 +371,117 @@ body {
 
 /* REWORK */
 
-.social-link{
-    margin-left: 10px;
-  }
+.social-link {
+  margin-left: 10px;
+}
 
 
 
-  
-  /* features*/
-  
-  .features{
-   background-color: #000000;
-  }
-  .features-block{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-  }
-  .features-item{
-    flex-basis: 30%;
-    margin-bottom: 63px;
-  }
-  .features-title{
-    margin: 0px;
-    font-weight: bold;
-    font-size: 24px;
-    line-height: 28px;
-    margin-bottom: 16px;
-  }
-  .features-image{
-    display: block;
-    margin-bottom: 22px;
-  }
-  .fetures-text{
-    margin: 0px;
-    font-weight: normal;
-    font-size: 16px;
-    line-height: 28px;
-  }
-  
-  /*projects*/
-  
 
 
-  .project-time, .project-cost{
-    flex-basis: 50%;
+
+/*projects*/
+
+
+
+
+
+
+
+
+/*contacts*/
+
+
+
+/* Адаптив */
+
+@media (max-width: 1100px) {
+  .person-avatar {
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
   }
-  .project-time, .project-cost, .project-feedback{
-    display: flex;
+}
+
+@media (max-width: 836px) {
+  .person-content {
+    flex-direction: column;
+  }
+
+  .person-avatar {
+    order: 0;
+    width: 300px;
+    height: 300px;
+    border-width: 10px;
+    margin-bottom: 17px;
+  }
+
+  .person-text {
+    order: 1;
+    text-align: center;
+  }
+
+  .features-item {
+    flex-basis: 45px;
+  }
+
+  .projects-slide {
+    flex-direction: column;
+  }
+
+  .project-image {
+    margin-bottom: 46px;
+  }
+
+  .contacts-block {
+    flex-direction: column;
     align-items: flex-start;
   }
-  .project-subtitle{
-    margin: 0px;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 21px;
-    margin-bottom: 7px;
+
+  .contacts-form {
+    margin-bottom: 58px;
   }
-  .project-paragraph{
-    margin: 0px;
-    font-weight: normal;
+}
+
+@media (max-width: 564px) {
+  .person {
+    padding-bottom: 75px;
+    padding-top: 20px;
+  }
+
+  .person-subtitle {
     font-size: 16px;
-    line-height: 150%;
+    line-height: 27px;
+    margin-bottom: 5px;
   }
-  .project-icon{
-    margin-right: 16Px;
+
+  .person-avatar {
+    width: 113px;
+    height: 113px;
+    border-width: 4px;
+    background-size: cover;
+    background-position: center-top;
   }
-  .project-time, .project-cost{
-    margin-bottom: 44px;
+
+  .person-header {
+    margin-bottom: 38px;
   }
-  .projects-bullet{
-    width: 10px;
-    height: 10px;
-    border: 2px solid #FFBB01;
-    border-radius: 50%;
-    display: inline-block;
+
+  .social-link {
     margin-left: 5px;
-    margin-right: 5px;
-    margin-top: 44px;
   }
-  .projects-bullet-active{
-    background-color: #FFBB01;
-  }
-  .projects-pagination{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  /*contacts*/
-  
-  .contacts-form{
-    background: #FFFFFF;
-    box-shadow: -5px 5px 0px #FFC41D; /*тень*/
-    border-radius: 5px; /*скругление*/
-    max-width: 380px;
-    padding-top: 40px;
-    padding-left: 48px;
-    padding-right: 48px;
-    padding-bottom: 49px;
-  }
-  .form-title{
-    margin: 0px;
-    color: black;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 28px;
-    text-align: center;
-    margin-bottom: 29px;
-  }
-  .input{
-    background: #F8F8F8;
-    box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
-    border-radius: 5px;
-    padding: 18px 20px;
-    padding-left: 50px;
-    width: 100%;
-    border: none; /*выкл обводку вкл браузером по умолчанию*/
-    font-size: 14px;
-    line-height: 28px;
-  }
-  .input-name{
-    margin-bottom: 17px;
-    background-image: url('../img/user-icon.svg');
-    background-repeat: no-repeat;
-    background-position: center left 20px;
-  }
-  .input-phone{
-    margin-bottom: 17px;
-    background-image: url('../img/phone-icon.svg');
-    background-repeat: no-repeat;
-    background-position: center left 20px;
-  }
-  .form-button{
-    width: 100%;
-  }
-  .contacts-block{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-  }
-  .contacts-text{
-    flex-basis: 50%;
-  }
-  .contacts-data{
-    display: flex;
-    flex-wrap: wrap;
-    margin-bottom: 42px;
-  }
-  .contacts-phone, .contacts-mail{
-    flex-basis: 50%;
-    margin-bottom: 53px;
-  }
-  .contacts-social {
-    flex-basis: 100%;
-  }
-  .contacts-title{
-    font-weight: bold;
+
+  .person-title {
     font-size: 24px;
     line-height: 28px;
-    margin: 0px;
-    margin-bottom: 15px;
   }
-  .contacts-link{
-    text-decoration: none;
-    color: inherit;
-    margin-right: 37px;
+
+  .person-description {
+    font-size: 14px;
+    line-height: 140%;
   }
-  .contacts-link:hover{
-    text-decoration: underline;
-  }
-  .contacts-policy{
-    display: inline-block;
-    font-size: 15px;
-    line-height: 18px;
-    text-decoration-line: underline;
-    color: #A5A5A5;
-    margin-top: 72px;
-  }
-  
-  /* Адаптив */
-  
-  @media (max-width: 1100px) {
-    .person-avatar{
-      width: 300px;
-      height: 300px;
-      border-width: 10px;
-    }
-  }
-  @media (max-width: 836px) {
-    .person-content{
-      flex-direction: column;
-    }
-    .person-avatar{
-      order: 0;
-      width: 300px;
-      height: 300px;
-      border-width: 10px;
-      margin-bottom: 17px;
-    }
-    .person-text{
-      order: 1;
-      text-align: center;
-    }
-    .features-item{
-      flex-basis: 45px;
-    }
-    .projects-slide{
-      flex-direction: column;
-    }
-    .project-image{
-      margin-bottom: 46px;
-    }
-    .contacts-block{
-      flex-direction: column;
-      align-items: flex-start;
-    }
-    .contacts-form{
-      margin-bottom: 58px;
-    }
-  }
-  @media (max-width: 564px) {
-    .person{
-      padding-bottom: 75px;
-      padding-top: 20px;
-    }
-    .person-subtitle{
-      font-size: 16px;
-      line-height: 27px;
-      margin-bottom: 5px;
-    }
-    .person-avatar{
-      width: 113px;
-      height: 113px;
-      border-width: 4px;
-      background-size: cover;
-      background-position: center-top;
-    }
-    .person-header{
-      margin-bottom: 38px;
-    }
-    .social-link{
-      margin-left: 5px;
-    }
-    .person-title{
-      font-size: 24px;
-      line-height: 28px;
-    }
-    .person-description{
-      font-size: 14px;
-      line-height: 140%;
-    }
-    /* .section{
+
+  /* .section{
       padding: 60px 0px;
     }
     .section-title{
@@ -481,54 +489,69 @@ body {
       line-height: 22px;
       margin-bottom: 63px;
     } */
-    .features-item{
-      flex-basis: 100%;
-      margin-bottom: 30px;
-    }
-    .features-title{
-      font-size: 18px;
-      line-height: 28px;
-    }
-    .fetures-text{
-      font-size: 14px;
-      line-height: 28px;
-    }
-    .project-title{
-      font-size: 18px;
-      line-height: 150%;
-    }
-    .project-time, .project-cost, .project-feedback{
-      flex-basis: 100%;
-      margin-bottom: 30px;
-    }
-    .project-paragraph{
-      font-size: 14px;
-    }
-    .contacts-form{
-      padding: 40px 19px;
-    }
-    .form-title{
-      font-size: 15px;
-      line-height: 140%;
-    }
-    .form-button{
-      font-size: 10px;
-    }
-    .contacts-phone, .contacts-mail{
-      flex-basis: 100%;
-      margin-bottom: 30px;
-    }
-    .contacts-title{
-      font-size: 18px;
-      line-height: 21px;
-    }
-    .contacts-link{
-      font-size: 14px;
-      line-height: 16px;
-      display: block;
-      margin-bottom: 13px;
-    }
-    .project-image{
-      max-width: 100%;
-    }
+  .features-item {
+    flex-basis: 100%;
+    margin-bottom: 30px;
   }
+
+  .features-title {
+    font-size: 18px;
+    line-height: 28px;
+  }
+
+  .fetures-text {
+    font-size: 14px;
+    line-height: 28px;
+  }
+
+  .project-title {
+    font-size: 18px;
+    line-height: 150%;
+  }
+
+  .project-time,
+  .project-cost,
+  .project-feedback {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .project-paragraph {
+    font-size: 14px;
+  }
+
+  .contacts-form {
+    padding: 40px 19px;
+  }
+
+  .form-title {
+    font-size: 15px;
+    line-height: 140%;
+  }
+
+  .form-button {
+    font-size: 10px;
+  }
+
+  .contacts-phone,
+  .contacts-mail {
+    flex-basis: 100%;
+    margin-bottom: 30px;
+  }
+
+  .contacts-title {
+    font-size: 18px;
+    line-height: 21px;
+  }
+
+  .contacts-link {
+    font-size: 14px;
+    line-height: 16px;
+    display: block;
+    margin-bottom: 13px;
+  }
+
+  .project-image {
+    max-width: 100%;
+  }
+}
