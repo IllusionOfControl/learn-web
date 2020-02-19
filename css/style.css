@@ -111,7 +111,7 @@ body {
   height: 500px;
 }
 
-.playstation-button {
+button {
   margin-top: 10px;
   border: none;
   padding: 12px 24px;
@@ -189,7 +189,7 @@ body {
 */
 
 .features {
-  background-color: #000000;
+  background-color: #323232;
   color: #FFFFFF;
   text-align: center;
 }
@@ -234,56 +234,51 @@ body {
     FOOTER 
 */
 
+footer{
+  background-color: #e73c7e;
+}
 
+footer .container {
+  display: flex;
+}
 
 .contacts-form {
   background: #FFFFFF;
-  box-shadow: -5px 5px 0px #FFC41D;
-  /*тень*/
-  border-radius: 5px;
-  /*скругление*/
-  max-width: 380px;
+  max-width: 400px;
   padding-top: 40px;
   padding-left: 48px;
   padding-right: 48px;
-  padding-bottom: 49px;
+  padding-bottom: 40px;
 }
 
 .form-title {
   margin: 0px;
   color: black;
   font-weight: bold;
-  font-size: 18px;
-  line-height: 28px;
+  font-size: 36px;
+  line-height: 48px;
   text-align: center;
   margin-bottom: 29px;
 }
 
+.form-description {
+  line-height: 24px;
+  font-size: 18px;
+}
+
 .input {
   background: #F8F8F8;
-  box-shadow: inset 0px 3px 10px rgba(199, 199, 199, 0.25);
-  border-radius: 5px;
   padding: 18px 20px;
-  padding-left: 50px;
   width: 100%;
-  border: none;
+  border-style: solid;
+  border-color: #d2d2d2;
   /*выкл обводку вкл браузером по умолчанию*/
   font-size: 14px;
   line-height: 28px;
 }
 
-.input-name {
+.input-email {
   margin-bottom: 17px;
-  background-image: url('../img/user-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center left 20px;
-}
-
-.input-phone {
-  margin-bottom: 17px;
-  background-image: url('../img/phone-icon.svg');
-  background-repeat: no-repeat;
-  background-position: center left 20px;
 }
 
 .form-button {
@@ -291,37 +286,29 @@ body {
 }
 
 .contacts-block {
+  min-width: 450px;
   display: flex;
   align-items: center;
+}
+
+.social-links {
+  display: flex;
+  margin-left: 50px;
+  width: 100%;
   justify-content: space-between;
 }
 
-.contacts-text {
-  flex-basis: 50%;
+.social-link {
+  /* display: flex; */
+  margin: auto;
 }
 
-.contacts-data {
-  display: flex;
-  flex-wrap: wrap;
-  margin-bottom: 42px;
+.social-icon {
+  width: 50px;
 }
 
-.contacts-phone,
-.contacts-mail {
-  flex-basis: 50%;
-  margin-bottom: 53px;
-}
-
-.contacts-social {
-  flex-basis: 100%;
-}
-
-.contacts-title {
-  font-weight: bold;
-  font-size: 24px;
-  line-height: 28px;
-  margin: 0px;
-  margin-bottom: 15px;
+.social-link:hover {
+  filter: invert(1);
 }
 
 .contacts-link {
@@ -370,28 +357,6 @@ body {
 
 
 /* REWORK */
-
-.social-link {
-  margin-left: 10px;
-}
-
-
-
-
-
-
-/*projects*/
-
-
-
-
-
-
-
-
-/*contacts*/
-
-
 
 /* Адаптив */
 

@@ -237,7 +237,7 @@
                         смотрите или загружайте передачи и фильмы с помощью Netflix, PlayStation Store и других любимых
                         приложений.
                     </p>
-                    <button class="playstation-button button-light">Подписаться на новости</button>
+                    <button class="button-light">Подписаться на новости</button>
                 </div>
                 <div class="playstation-image">
                     <div class="playstation-div">
@@ -382,32 +382,18 @@
 
     <footer class="section">
         <div class="container">
-            <h2 class="section-title wow fadeInLeft" data-wow-delay="0.2s">Свяжитесь со мной</h2>
+            <form id="contact-form" class=contacts-form wow fadeInLeft data-wow-delay="0.2s" action="#" metod="post">
+                <h4 class="form-title">Не упустите важное!</h4>
+                <p class="form-description">Получайте информацию о выходе новых игр, технологий, фильмов, трансляций</p>
+                <input type="email" class="input input-email" placeholder="Email" id="input-">
+                <button type="submit" class="button-dark form-button">Подписаться</button>
+            </form>
             <div class="contacts-block">
-                <form id="contact-form" class=contacts-form wow fadeInLeft data-wow-delay="0.2s" action="../email.php"
-                    metod="post">
-                    <h4 class="form-title">Можете оставить заявку</h4>
-                    <input type="text" class="input input-name" placeholder="Ваше имя" id="input-name">
-                    <input type="text" class="input input-phone" placeholder="Ваш email" id="input-phone">
-                    <input id="check_form" type="button" class="button form-button" value="Оставить заявку">
-                </form>
-                <div class="contacts-text wow fadeInRight" data-wow-delay="0.2s">
-                    <div class="contacts-data">
-                        <!-- /.contacts-phone -->
-                        <!-- /.contacts-mail -->
-                        <div class="contacts-social">
-                            <h4 class="contacts-title"></h4>
-                            <a href="" class="contacts-link"></a>
-                            <p></p>
-                            <a href="" class="contacts-link"></a>
-                        </div>
-                    </div>
-
-
-                    <div class="social-links">
-                        <a href="" class="social-link"><img src="" alt="VK"></a>
-                        <a href="" class="social-link"><img src="" alt="inst"></a>
-                        <img src="img/opportunities/ps4_sharing_and_broadcast.jpeg" class="test">
+                    <div class="social-links wow fadeInRight">
+                        <a href="" class="social-link"><img class="social-icon" src="img/social_twitter.svg" alt="Twitter"></a>
+                        <a href="" class="social-link"><img class="social-icon" src="img/social_facebook.svg" alt="Facebook"></a>
+                        <a href="" class="social-link"><img class="social-icon" src="img/social_google-plus.svg" alt="Google+"></a>
+                        <a href="" class="social-link"><img class="social-icon" src="img/social_youtube.svg" alt="Youtube"></a>
                     </div>
                     <a href="#" class="contacts-policy"></a>
                 </div>
