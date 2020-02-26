@@ -22,8 +22,6 @@ function ready(error, xml) {
   }
 }
 
-
-// randomiser courtesy of @bdc https://twitter.com/bdc/status/839960325805969408
 const randomInterval = (() => {
   const random = (min, max) => Math.random() * (max - min) + min;
   return (callback, min, max) => {
@@ -43,7 +41,6 @@ const randomInterval = (() => {
   };  
 })();
 
-// const allElements = document.querySelectorAll('span');
 const allElements = document.getElementsByClassName('playstation-image-span');
 
 const getRandomElement = (elements) => {

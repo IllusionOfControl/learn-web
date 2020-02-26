@@ -1,3 +1,5 @@
+/* https://codepen.io/daviddarnes/pen/WppwLB */
+
 path, line, ellipse {
   fill: none;
   stroke: #000;
@@ -9,7 +11,7 @@ path, line, ellipse {
   --icons: #777;
 }
 
-.playstation-image {
+.playstation-controls {
   order: 0;
   background: var(--background);
   /* height: 100vh ; */
@@ -27,7 +29,7 @@ path, line, ellipse {
   justify-content: center;
 }
 
-.playstation-image-span {
+.playstation-controls-span {
   display: inline-block;
   position: relative;
   transform: scale(1);

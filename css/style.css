@@ -1,10 +1,6 @@
-/* Сюда коментарии и TODO
-  - SVG на фул скрин? 
-  - Fonts
-  - градиент
-  
-  
-*/
+/* Импорт шрифтов */
+@import url('https://fonts.googleapis.com/css?family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css?family=Nunito&display=swap');
 
 
 * {
@@ -26,14 +22,6 @@ body {
   margin: auto;
 }
 
-.button-light {
-  background-color: #0072ce;
-}
-
-.button-dark {
-  background-color: #363636;
-}
-
 .playstation-navbar {
   background-color: #FFFFFF;
   width: auto;
@@ -42,6 +30,7 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  font-family: 'Nunito';
 }
 
 .playstation-animation {
@@ -106,18 +95,37 @@ body {
 }
 
 button {
-  margin-top: 10px;
   border: none;
+  margin-top: 10px;
   padding: 12px 24px;
   font-size: 16px;
   color: white;
 }
 
+.button-light {
+  background-color: #0072ce;
+}
+
+.button-light:hover {
+  background-color: #0080e8;
+}
+
+.button-dark {
+  background-color: #363636;
+}
+
+.button-dark:hover {
+  /* background-color: #434343; */
+  background-color: #505050;
+}
+
+
+
 /*
     SLIDES
 */
 
-.section {
+section {
   padding-top: 92px;
   padding-bottom: 92px;
 }
@@ -225,11 +233,12 @@ button {
     FOOTER 
 */
 
-footer{
+
+.contacts {
   background-color: #e73c7e;
 }
 
-footer .container {
+section .container {
   display: flex;
   justify-content: space-between;
 }
@@ -291,7 +300,6 @@ footer .container {
 }
 
 .social-link {
-  /* display: flex; */
   margin: auto;
 }
 
@@ -321,6 +329,16 @@ footer .container {
   color: #A5A5A5;
   margin-top: 72px;
 }
+
+.site-description {
+  color: #FFFFFF;
+  background-color: #ac1a52;
+}
+.site-description p {
+  margin: 0;
+}
+
+
 
 
 

@@ -3,12 +3,10 @@
 
 <head>
     <meta charset="UTF-8">
-    <!-- <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-RU-Compatible" content="ie=edge"> -->
     <title>Sergey Skorokhod - personal page</title>
-    <link href="https://fonts.googleapis.com/css?family=Roboto&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/animations.css">
+    <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper.min.css">
     <script src="https://d3js.org/d3.v3.min.js"></script>
     <script src="https://d3js.org/queue.v1.min.js"></script>
@@ -23,6 +21,7 @@
     <header class="playstation-header">
         <div class="playstation-animation">
             <div class="container" id="animation-ps4">
+                <!-- svg animation took from http://bl.ocks.org/KoGor/8160770 -->
                 <script src="js/animations.js"></script>
                 <svg id="ps4" version="1.1" class="wire-wrapper" xmlns="http://www.w3.org/2000/svg"
                     xmlns:xlink="http://www.w3.org/1999/xlink" width="960" height="500" viewBox="0 0 1166.8 736.9"
@@ -239,12 +238,13 @@
                     </p>
                     <button class="button-light">Подписаться на новости</button>
                 </div>
-                <div class="playstation-image">
+                <!-- https://codepen.io/daviddarnes/pen/WppwLB -->
+                <div class="playstation-controls">
                     <div class="playstation-div">
-                        <span class="playstation-image-span triangle" data-animate="false"></span>
-                        <span class="playstation-image-span circle" data-animate="false"></span>
-                        <span class="playstation-image-span cross" data-animate="false"></span>
-                        <span class="playstation-image-span square" data-animate="false"></span>
+                        <span class="playstation-controls-span triangle" data-animate="false"></span>
+                        <span class="playstation-controls-span circle" data-animate="false"></span>
+                        <span class="playstation-controls-span cross" data-animate="false"></span>
+                        <span class="playstation-controls-span square" data-animate="false"></span>
                     </div>
                 </div>
                 <div>
@@ -257,9 +257,7 @@
         <section class="section playstation-projects">
             <div class="container">
                 <div class="swiper-container">
-                    <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
-                        <!-- Slides -->
                         <div class="swiper-slide">
                             <div class="project-slide" id="slide-1">
                                 <div class="project-image">
@@ -337,14 +335,9 @@
             </div>
         </section>
 
-
-
-
-
-        <section class="features section">
+        <section class="section features">
             <div class="container">
-                <!-- <h2 class="section-title"></h2> ? -->
-                <div class="features-block">
+                <div class="features-block wow fadeIn">
                     <div class="features-item">
                         <img src="img/opportunities/ps4-pro-shareplay.png" alt="" class="features-image">
                         <h3 class="features-title">Shared Play в 1080p</h3>
@@ -380,36 +373,40 @@
         </section>
     </main>
 
-    <footer class="section">
-        <div class="container">
-            <form id="contact-form" class=contacts-form wow fadeInLeft data-wow-delay="0.2s" action="#" metod="post">
-                <h4 class="form-title">Не упустите важное!</h4>
-                <p class="form-description">Получайте информацию о выходе новых игр, технологий, фильмов, трансляций</p>
-                <input type="email" class="input input-email" placeholder="Email" id="input-">
-                <button type="submit" class="button-dark form-button">Подписаться</button>
-            </form>
-            <div class="contacts-block">
-                    <div class="social-links wow fadeInRight">
-                        <a href="" class="social-link"><img class="social-icon" src="img/social_twitter.svg" alt="Twitter"></a>
-                        <a href="" class="social-link"><img class="social-icon" src="img/social_facebook.svg" alt="Facebook"></a>
-                        <a href="" class="social-link"><img class="social-icon" src="img/social_google-plus.svg" alt="Google+"></a>
-                        <a href="" class="social-link"><img class="social-icon" src="img/social_youtube.svg" alt="Youtube"></a>
+    <footer class="">
+        <section class="section contacts">
+            <div class="container">
+                <form id="contact-form" class="contacts-form wow fadeInLeft" onsubmit="sendRequest(); return false" metod="post">
+                    <h4 class="form-title">Не упустите важное!</h4>
+                    <p class="form-description">Получайте информацию о выходе новых игр, технологий, фильмов, трансляций</p>
+                    <input type="email" class="input input-email" placeholder="Email" id="input-email">
+                    <button type="submit" class="button-dark form-button" id="contact-button">Подписаться</button>
+                </form>
+                <div class="contacts-block wow fadeInRight">
+                        <div class="social-links">
+                            <a href="" class="social-link"><img class="social-icon" src="img/social_twitter.svg" alt="Twitter"></a>
+                            <a href="" class="social-link"><img class="social-icon" src="img/social_facebook.svg" alt="Facebook"></a>
+                            <a href="" class="social-link"><img class="social-icon" src="img/social_google-plus.svg" alt="Google+"></a>
+                            <a href="" class="social-link"><img class="social-icon" src="img/social_youtube.svg" alt="Youtube"></a>
+                        </div>
                     </div>
-                    <a href="#" class="contacts-policy"></a>
                 </div>
             </div>
-        </div>
+        </section>
+
+        <!-- <div class="site-description">
+            <p>
+                This site was made for educational purposes. 
+                Created by <b><i>Illusion of control</i></b>.
+            </p>
+        </div> -->
     </footer>
 
+    <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/wow.min.js"></script>
     <script src="js/swiper.min.js"></script>
-    <script src="js/main.js"></script>
-    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
-    <script src="js/script.js"></script>
     <script src="js/animations.js"></script>
-    <script>
-        ready();
-    </script>
+    <script src="js/main.js"></script>
 </body>
 
 </html>
