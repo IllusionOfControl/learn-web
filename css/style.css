@@ -30,6 +30,16 @@ body {
   display: flex;
   justify-content: space-between;
   align-items: center;
+}
+
+.playstation-navbar img {
+  width: 48px;
+}
+
+.playstation-navbar h1 {
+  font-size: 32px;
+  line-height: 10px;
+  user-select: none;
   font-family: 'Nunito';
 }
 
@@ -118,8 +128,6 @@ button {
   /* background-color: #434343; */
   background-color: #505050;
 }
-
-
 
 /*
     SLIDES
@@ -233,7 +241,6 @@ section {
     FOOTER 
 */
 
-
 .contacts {
   background-color: #e73c7e;
 }
@@ -243,7 +250,7 @@ section .container {
   justify-content: space-between;
 }
 
-.contacts-form {
+.contact-form {
   background: #FFFFFF;
   max-width: 400px;
   padding-top: 40px;
@@ -368,9 +375,13 @@ section .container {
 
 /* REWORK */
 
-/* Адаптив */
-
 @media (max-width: 1100px) {
+  .playstation-navbar {
+
+  }
+
+  .playstation-navbar h1{
+  }
   .person-avatar {
     width: 300px;
     height: 300px;
@@ -464,6 +475,7 @@ section .container {
       line-height: 22px;
       margin-bottom: 63px;
     } */
+
   .features-item {
     flex-basis: 100%;
     margin-bottom: 30px;

@@ -8,13 +8,11 @@
     <link rel="stylesheet" href="css/animations.css">
     <link rel="stylesheet" href="css/animate.css">
     <link rel="stylesheet" href="css/swiper.min.css">
-    <script src="https://d3js.org/d3.v3.min.js"></script>
-    <script src="https://d3js.org/queue.v1.min.js"></script>
 </head>
 
 <body>
     <nav class="playstation-navbar">
-        <img class="logo" src="img/logo-playstation.svg" alt="Logo" width="48">
+        <img class="logo" src="img/logo-playstation.svg" alt="Logo">
         <h1 class="">PlayStation</h1>
     </nav>
 
@@ -236,7 +234,7 @@
                         смотрите или загружайте передачи и фильмы с помощью Netflix, PlayStation Store и других любимых
                         приложений.
                     </p>
-                    <button class="button-light">Подписаться на новости</button>
+                    <button class="button-light" id="goto-contact-form">Подписаться на новости</button>
                 </div>
                 <!-- https://codepen.io/daviddarnes/pen/WppwLB -->
                 <div class="playstation-controls">
@@ -246,8 +244,6 @@
                         <span class="playstation-controls-span cross" data-animate="false"></span>
                         <span class="playstation-controls-span square" data-animate="false"></span>
                     </div>
-                </div>
-                <div>
                 </div>
             </div>
         </div>
@@ -376,31 +372,28 @@
     <footer class="">
         <section class="section contacts">
             <div class="container">
-                <form id="contact-form" class="contacts-form wow fadeInLeft" onsubmit="sendRequest(); return false" metod="post">
+                <form id="contact-form" class="contact-form wow fadeInLeft" onsubmit="sendRequest(); return false" metod="post" name="contact-form">
                     <h4 class="form-title">Не упустите важное!</h4>
                     <p class="form-description">Получайте информацию о выходе новых игр, технологий, фильмов, трансляций</p>
-                    <input type="email" class="input input-email" placeholder="Email" id="input-email">
+                    <input type="email" class="input input-email" placeholder="Email" id="input-email" required>
                     <button type="submit" class="button-dark form-button" id="contact-button">Подписаться</button>
                 </form>
                 <div class="contacts-block wow fadeInRight">
                         <div class="social-links">
-                            <a href="" class="social-link"><img class="social-icon" src="img/social_twitter.svg" alt="Twitter"></a>
-                            <a href="" class="social-link"><img class="social-icon" src="img/social_facebook.svg" alt="Facebook"></a>
-                            <a href="" class="social-link"><img class="social-icon" src="img/social_google-plus.svg" alt="Google+"></a>
-                            <a href="" class="social-link"><img class="social-icon" src="img/social_youtube.svg" alt="Youtube"></a>
+                            <a href="https://twitter.com/playstationru" class="social-link"><img class="social-icon" src="img/social_twitter.svg" alt="Twitter"></a>
+                            <a href="https://www.facebook.com/PlayStationRu" class="social-link"><img class="social-icon" src="img/social_facebook.svg" alt="Facebook"></a>
+                            <a href="https://www.instagram.com/playstationru" class="social-link"><img class="social-icon" src="img/social_instagram.svg" alt="Instagram"></a>
+                            <a href="https://www.youtube.com/user/SonyPlayStationRu" class="social-link"><img class="social-icon" src="img/social_youtube.svg" alt="Youtube"></a>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
-
-        <!-- <div class="site-description">
-            <p>
-                This site was made for educational purposes. 
-                Created by <b><i>Illusion of control</i></b>.
-            </p>
-        </div> -->
     </footer>
+
+
+    <script src="https://d3js.org/d3.v3.min.js"></script>
+    <script src="https://d3js.org/queue.v1.min.js"></script>
 
     <script src="js/jquery-2.1.4.min.js"></script>
     <script src="js/wow.min.js"></script>
@@ -410,3 +403,12 @@
 </body>
 
 </html>
+
+<!-- <div class="site-description">
+    <p>
+        This site was made for educational purposes. 
+        Created by <b><i>Illusion of control</i></b>.
+    </p>
+</div> -->
+
+

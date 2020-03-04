@@ -22,6 +22,7 @@ function ready(error, xml) {
   }
 }
 
+
 const randomInterval = (() => {
   const random = (min, max) => Math.random() * (max - min) + min;
   return (callback, min, max) => {
@@ -41,7 +42,7 @@ const randomInterval = (() => {
   };  
 })();
 
-const allElements = document.getElementsByClassName('playstation-image-span');
+const allElements = document.getElementsByClassName('playstation-controls-span');
 
 const getRandomElement = (elements) => {
 	return elements[Math.floor(Math.random()*elements.length)];
