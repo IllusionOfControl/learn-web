@@ -14,9 +14,7 @@ ready();
 
 
 function sendRequest() {
-  // email = $('#input-email').val()
-  // ValidateEmail(email)
-  alert('Запрос на подписку сообщений был отправлен.')
+  alert('Запрос на подписку новостей был отправлен.')
 }
 
 

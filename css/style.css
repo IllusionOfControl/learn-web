@@ -49,24 +49,9 @@ body {
   animation: gradient 15s ease infinite;
   height: 700px;
   position: relative;
-}
-
-.playstation-animation svg {
-  position: absolute;
-  top: 15%;
-}
-
-.playstation-company {
-  background-color: #222222;
-  color: #ffffff;
-}
-
-.playstation-content {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
-  padding-top: 50px;
-  padding-bottom: 50px;
 }
 
 /* Gradient */
@@ -82,6 +67,24 @@ body {
   100% {
     background-position: 0% 50%;
   }
+}
+
+.playstation-animation svg {
+  position: absolute;
+  top: 15%;
+}
+
+.playstation-information {
+  background-color: #222222;
+  color: #ffffff;
+}
+
+.playstation-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .playstation-title {
@@ -375,170 +378,205 @@ section .container {
 
 /* REWORK */
 
-@media (max-width: 1100px) {
+@media (max-width: 1100px) {  
   .playstation-navbar {
-
+    padding-left: 50px;
+    padding-right: 50px;
   }
 
-  .playstation-navbar h1{
+  .playstation-navbar img {
+    width: 96px;
   }
-  .person-avatar {
-    width: 300px;
-    height: 300px;
-    border-width: 10px;
+  
+  .playstation-navbar h1 {
+    font-size: 64px;
+    line-height: 15px;
   }
-}
+  
+  .playstation-title {
+    font-size: 50px;
+    line-height: 59px;
+    font-weight: bold;
+    margin-top: 0px;
+    margin-bottom: 20px;
+  }
 
-@media (max-width: 836px) {
-  .person-content {
+  .playstation-content {
+    display: flex;
+  }
+  
+  .playstation-title {
+    font-size: 76px;
+    line-height: normal;
+  }
+
+  .playstation-description {
+    font-size: 28px;
+    line-height: 48px;
+    margin-bottom: 38px;
+    max-width: max-content;
+  }
+  
+  button {
+    margin-top: 48px;
+    padding: 32px 48px;
+    font-size: 36px;
+  }
+
+  .playstation-controls {
+    display: none;
+  }
+
+
+  
+  .project-description {
+    max-width: 70%;
+    padding-right: 10px;
+    padding-left: 10px;
+  }
+  
+  .project-image {
+    /* transform: scale(1.2);
+    margin: auto; */
+  }
+  
+  .project-image img {
+
+    /* transform: scale(1.5); */
+  }
+  
+  .project-title {
+    font-size: 58px;
+    line-height: normal;
+    margin: 0px;
+    margin-bottom: 15px;
+  }
+  
+  .project-text {
+    font-size: 36px;
+    flex-basis: 60%;
+    display: flex;
+    flex-wrap: wrap;
+    font-weight: normal;
+  }
+  
+  .project-text p {
+    margin: 5px;
+  }
+
+  .features-item {
+    flex-basis: 50%;
+    max-width: 450px;
+    margin-bottom: 63px;
+  }
+
+
+
+
+
+
+  .contacts .container {
     flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-content: center;
   }
 
-  .person-avatar {
-    order: 0;
-    width: 300px;
-    height: 300px;
-    border-width: 10px;
+  .contacts {
+    background-color: #e73c7e;
+  }
+  
+  section .container {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .contact-form {
+    max-width: 700px;
+    padding-top: 40px;
+    padding-left: 48px;
+    padding-right: 48px;
+    padding-bottom: 40px;
+  }
+  
+  .form-title {
+    font-size: 64px;
+    line-height: normal;
+    text-align: center;
+    margin-bottom: 18px;
+  }
+  
+  .form-description {
+    line-height: normal;
+    font-size: 38px;
+  }
+  
+  .input {
+    padding: 24px 36px;
+    font-size: 38px;
+    line-height: 28px;
+  }
+  
+  .input-email {
     margin-bottom: 17px;
   }
-
-  .person-text {
-    order: 1;
-    text-align: center;
-  }
-
-  .features-item {
-    flex-basis: 45px;
-  }
-
-  .projects-slide {
-    flex-direction: column;
-  }
-
-  .project-image {
-    margin-bottom: 46px;
-  }
-
-  .contacts-block {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-
-  .contacts-form {
-    margin-bottom: 58px;
-  }
-}
-
-@media (max-width: 564px) {
-  .person {
-    padding-bottom: 75px;
-    padding-top: 20px;
-  }
-
-  .person-subtitle {
-    font-size: 16px;
-    line-height: 27px;
-    margin-bottom: 5px;
-  }
-
-  .person-avatar {
-    width: 113px;
-    height: 113px;
-    border-width: 4px;
-    background-size: cover;
-    background-position: center-top;
-  }
-
-  .person-header {
-    margin-bottom: 38px;
-  }
-
-  .social-link {
-    margin-left: 5px;
-  }
-
-  .person-title {
-    font-size: 24px;
-    line-height: 28px;
-  }
-
-  .person-description {
-    font-size: 14px;
-    line-height: 140%;
-  }
-
-  /* .section{
-      padding: 60px 0px;
-    }
-    .section-title{
-      font-size: 19px;
-      line-height: 22px;
-      margin-bottom: 63px;
-    } */
-
-  .features-item {
-    flex-basis: 100%;
-    margin-bottom: 30px;
-  }
-
-  .features-title {
-    font-size: 18px;
-    line-height: 28px;
-  }
-
-  .fetures-text {
-    font-size: 14px;
-    line-height: 28px;
-  }
-
-  .project-title {
-    font-size: 18px;
-    line-height: 150%;
-  }
-
-  .project-time,
-  .project-cost,
-  .project-feedback {
-    flex-basis: 100%;
-    margin-bottom: 30px;
-  }
-
-  .project-paragraph {
-    font-size: 14px;
-  }
-
-  .contacts-form {
-    padding: 40px 19px;
-  }
-
-  .form-title {
-    font-size: 15px;
-    line-height: 140%;
-  }
-
+  
   .form-button {
-    font-size: 10px;
+    width: 100%;
   }
-
-  .contacts-phone,
-  .contacts-mail {
-    flex-basis: 100%;
-    margin-bottom: 30px;
+  
+  .contacts-block {
+    min-width: 450px;
+    display: flex;
+    align-items: center;
   }
-
-  .contacts-title {
-    font-size: 18px;
-    line-height: 21px;
+  
+  .social-links {
+    display: flex;
+    margin-top: 60px;
+    margin-left: 0px;
+    width: 100%;
+    justify-content: space-between;
   }
-
+  
+  .social-link {
+    margin: auto;
+  }
+  
+  .social-icon {
+    width: 120px;
+  }
+  
+  .social-link:hover {
+    filter: invert(1);
+  }
+  
   .contacts-link {
-    font-size: 14px;
-    line-height: 16px;
-    display: block;
-    margin-bottom: 13px;
+    text-decoration: none;
+    color: inherit;
+    margin-right: 37px;
   }
-
-  .project-image {
-    max-width: 100%;
+  
+  .contacts-link:hover {
+    text-decoration: underline;
   }
+  
+  .contacts-policy {
+    display: inline-block;
+    font-size: 15px;
+    line-height: 18px;
+    text-decoration-line: underline;
+    color: #A5A5A5;
+    margin-top: 72px;
+  }
+  
+  .site-description {
+    color: #FFFFFF;
+    background-color: #ac1a52;
+  }
+  .site-description p {
+    margin: 0;
+  }
+  
+  
 }
