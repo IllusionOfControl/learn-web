@@ -1,28 +1,3 @@
-function ready(error, xml) {
-
-  var svg = d3.select("#ps4"),
-  svgWidth = svg.attr("width"),
-  svgHeight = svg.attr("height");
-
-  var paths = svg.selectAll("path")
-    .call(transition);
-
-  function transition(path) {
-    path.transition()
-        .duration(5000)
-        .attrTween("stroke-dasharray", tweenDash)
-  }
-  
-  function tweenDash() {
-    var l = this.getTotalLength(),
-        i = d3.interpolateString("0," + l, l + "," + l); // interpolation of stroke-dasharray attr
-    return function(t) {
-      return i(t);
-    };
-  }
-}
-
-
 const randomInterval = (() => {
   const random = (min, max) => Math.random() * (max - min) + min;
   return (callback, min, max) => {

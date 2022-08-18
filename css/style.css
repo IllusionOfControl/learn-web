@@ -43,7 +43,7 @@ body {
   font-family: 'Nunito';
 }
 
-.playstation-animation {
+.playstation-performance {
   background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
   background-size: 400% 400%;
   animation: gradient 15s ease infinite;
@@ -69,9 +69,20 @@ body {
   }
 }
 
-.playstation-animation svg {
+.playstation-performance svg {
   position: absolute;
   top: 15%;
+  stroke-dasharray: 500 0;
+  animation: picture-draw 3s reverse;
+}
+.playstation-performance object {
+  background-color: white;
+}
+
+@keyframes picture-draw {
+  to {
+    stroke-dasharray: 0 500;
+  }
 }
 
 .playstation-information {
@@ -128,7 +139,6 @@ button {
 }
 
 .button-dark:hover {
-  /* background-color: #434343; */
   background-color: #505050;
 }
 

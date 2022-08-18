@@ -8,8 +8,6 @@ var mySwiper = new Swiper('.swiper-container', {
   allowTouchMove: false,
 })
 
-ready();
-
 function sendRequest() {
   alert('Запрос на подписку новостей был отправлен.')
 }
